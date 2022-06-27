@@ -1,0 +1,131 @@
+.basics {
+  &__title {
+    font-size: 28px;
+    @media (min-width: 768px) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__input-intro {
+    &--mobile {
+      padding: 1rem 0rem;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    &--tablet {
+      display: none;
+      @media (min-width: 768px) {
+        padding: 1rem 0rem;
+        display: block;
+      }
+    }
+  }
+
+  &__container {
+    padding: 1rem;
+  }
+
+  &__input-primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  &__input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__input-select {
+    width: calc(100% - 120px);
+  }
+
+  &__input-image {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      width: 400px;
+    }
+  }
+
+  &__button--disabled {
+    background-color: #0075be;
+    opacity: 0.6;
+    border: 1px;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 10rem;
+  }
+
+  &__button--active {
+    background-color: #0075be;
+    border: 1px;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 10rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    &:hover {
+      transition: 0.2s ease-in-out;
+      background-color: #005587;
+      text-decoration: underline;
+    }
+  }
+
+  &__bottom-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      align-items: flex-start;
+    }
+  }
+}
+
+.basics__input {
+  &-select {
+    color: black;
+    border: none;
+    border-bottom: 1px solid grey;
+    &:focus {
+      outline: none;
+
+      box-shadow: 0 1px 0 0 blue;
+    }
+
+    &:invalid {
+      color: grey !important;
+    }
+  }
+}
+.basic__bottom-link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.basics__feeling {
+  padding-bottom: 1rem;
+  min-height: 3rem;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.mobile__containers {
+  display: flex;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}

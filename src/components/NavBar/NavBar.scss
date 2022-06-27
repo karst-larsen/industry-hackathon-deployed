@@ -1,0 +1,88 @@
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+    }
+
+    .bmo-logo {
+        width: 5rem;
+        margin-left: 0.75rem;
+        cursor: pointer;
+    }
+
+    .right-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__link {
+        padding: 0 0.5rem;
+        font-size: .75rem;
+    }
+
+    &__hamburger {
+        height: 5rem;
+        min-width: 4.6rem;
+        background-color: #0075BE;
+        background-image: url('../../assets/images/hamburger.svg');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        cursor: pointer;
+    }
+
+    .bottom-nav {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow-x: scroll;
+        scroll-padding: 0;
+        padding: 0;
+        background: rgb(238,238,238);
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(238,238,238,1) 100%);
+        border: 1px solid #eee;
+
+        &::-webkit-scrollbar {
+            outline: 0;
+            height: 0;
+        }
+
+        &__list {
+            display: flex;
+            height: 100%;
+            list-style: none;
+            padding: 0;
+        }
+        
+        
+        &__list-items {
+            // margin: 0 1rem;
+            padding: 1.5625rem;
+            height: 4.25rem;
+            font-weight: bold;
+            font-size: 14px;
+            width: 100%;
+
+            &--selected {
+
+            }
+
+            &:hover {
+                color: #0075BE;
+                border-bottom: 4px solid #0075BE;
+            }
+
+            &:first-child {
+                border-bottom: 4px solid #0075BE;
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+.journey {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 4rem;
+    background-color: #F5F6F7;
+
+    @media screen and (min-width: 768px) {
+        height: 60rem;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__prompt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        height: 5rem;   
+    
+        @media screen and (min-width: 768px) {
+            padding: 2rem 0;
+        }
+    }
+
+    &__nav {
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        background: rgb(238,238,238);
+        background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(238,238,238,1) 100%);
+        border: 1px solid #eee;
+    }
+
+    &__list-item {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &--selected {
+            border-bottom: .1875rem solid #0075BE;
+        }
+
+        &--inactive {
+            color: grey;
+            border-bottom: .1875rem solid grey;
+        }
+
+        &:hover {
+            color: #0075BE;
+        }
+    }
+
+    &__paragraph {
+        width: 100%;
+        padding: 1rem;
+        font-weight: 200;
+
+        @media screen and (min-width: 768px) {
+            max-width: 60%;
+            align-self: flex-start;
+        }
+    }
+
+    &__benefits-box {
+        margin-left: 3rem;
+        align-self: flex-start;
+        margin-bottom: 1rem;
+        max-width: 400px;
+    }
+
+    &__benefits {
+        padding-left: 1rem;
+        list-style-image: url('../../assets/icons/Check.svg');
+        height: 3rem;
+        font-weight: 200;
+    }
+
+    &__incentive {
+        align-self: flex-start;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    &__location {
+        font-size: 2rem;
+        align-self: flex-start;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    &__next-steps {
+        margin-top: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 1.5rem;
+    }
+
+    &__button {
+        background-color: #0075be;
+        background-image: url('../../assets/icons/Lock.svg');
+        background-repeat: no-repeat;
+        background-position: 1.5rem 50%;
+        border: 1px;
+        color: white;
+        padding: 1rem 0rem 1rem 1rem;
+        border-radius: 25px;
+        text-transform: uppercase;
+        font-weight: 600;
+        width: 10rem;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        
+        &:hover {
+            transition: 0.2s ease-in-out;
+            background-color: #005587;
+        }
+    }
+
+    &__learn-more {
+        margin-left: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #0075be;
+        width: 7.5rem;
+
+        background-image: url('../../assets/icons/chevron.svg');
+        background-repeat: no-repeat;
+        background-position: 100%;
+        box-shadow: none;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    &__banner {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            width: 18.75rem;
+            height: 600px;
+            border-radius: 1rem;
+            position: relative;
+            margin-left: auto;
+            padding-right: 1rem;
+            margin-top: -30rem;
+        }
+    }
+    &__banner--second {
+        display: none; 
+
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            width: 18.75rem;
+            height: 600px;
+            border-radius: 1rem;
+            position: relative;
+            margin-left: auto;
+            padding-right: 1rem;
+            margin-top: -46.25rem;
+        }
+
+        @media screen and (min-width: 1080px) {
+            margin-top: -44rem;
+        }
+    }
+
+
+}

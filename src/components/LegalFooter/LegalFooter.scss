@@ -1,0 +1,33 @@
+.legal {
+  &__wrapper {
+    background-color: #005587;
+    padding: 1rem;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: white;
+  }
+  &__text {
+    padding-top: 1rem;
+  }
+
+  &__body {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1rem;
+    &--terms {
+      text-decoration: underline;
+    }
+  }
+
+  &__arrow {
+    cursor: pointer;
+  }
+}

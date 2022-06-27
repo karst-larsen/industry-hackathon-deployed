@@ -1,0 +1,51 @@
+.snap-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    width: 22.5rem;
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+    @media screen and (min-width: 768px) {
+        align-self: flex-start;
+        margin: 0 1rem;
+    }
+
+    &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        height: 4px;
+
+        &-thumb {
+            max-height: .1875rem; 
+            border-radius: .25rem;
+            background-color: #0075BE;
+            border-radius: 3px;
+        }
+
+        &-track {
+            background-color: lightgrey;
+            border-radius: 3px;
+        }
+    }
+
+    &__image {
+        &--1 {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+        
+        &--2 {
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+        
+        &--3 {
+            scroll-snap-align: end;
+            scroll-snap-stop: always;
+        }
+    }
+}
+
