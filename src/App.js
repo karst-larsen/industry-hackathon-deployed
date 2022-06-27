@@ -3,7 +3,7 @@ import BottomFooter from "./components/BottomFooter/BottomFooter";
 import HeroBanner from "./components/HeroBanner/HeroBanner";
 import LegalFooter from "./components/LegalFooter/LegalFooter";
 import NavBar from "./components/NavBar/NavBar";
-import Slider from "./components/Slider/Slider";
+
 import Journey from "./components/Journey/Journey";
 import BankingBasics from "./components/BankingBasics/BankingBasics";
 import BankOnline from "./components/BankOnline/BankOnline";
